@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/61b347cc02.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="/images/logo-favi.png" type="image/x-icon">
+    <title>Income</title>
+</head>
+<body>
+  <%- include('./partials/header-nav.ejs') %>
+    <div class="wrapper">
+      <div class="sidebar">
+          <ul>
+              <li class="active"><i class="fas fa-university"></i><a href="/income">Income</a></li>
+              <li><i class="fas fa-clipboard-list"></i><a href="/budget">Budget</a></li>
+              <li><i class="fas fa-flag"></i><a href="/goals"> Goals</a></li>
+          </ul>
+      </div>
+      <div class="main-income">
+        <div>
+          <h2>Let's know how much you earn, chill we'll keep it as a secret</h2>
+        </div>
+        <form class="month-year-income">
+          <input type="month" name="month" id="month_yr">
+          <input type="submit" class="month-btn">
+      </form>
+    
+      <table class="table-income">
+        <thead>
+          <td>Source</td>
+          <td>Amount</td>
+        </thead>
+        <tr>
+          <td>Salary</td>
+          <td class="salary"><input name="salary" type="number" placeholder="Rs. 0" value="0"></td>
+          <td><button class="btn">Update</button></td>
+        </tr>
+        <tr>
+          <td>Interest</td>
+          <td><input name="interest" type="number" placeholder="Rs. 0" value="0"></td>
+          <td><button class="btn">Update</button></td>
+        </tr>
+        <tr>
+          <td>Dividend</td>
+          <td><input name="dividend" type="number" placeholder="Rs. 0" value="0"></td>
+          <td><button class="btn">Update</button></td>
+        </tr>
+        <tr>
+          <td>Rental</td>
+          <td><input name="rental" type="number" placeholder="Rs. 0" value="0"></td>
+          <td><button class="btn">Update</button></td>
+        </tr>
+        <tr>
+          <td>Pocket Money</td>
+          <td><input name="pocketMoney" type="number" placeholder="Rs. 0" value="0"></td>
+          <td><button class="btn">Update</button></td>
+        </tr>
+        <tr>
+          <td><button class="incomeTotalCalc">Total</button></td>
+          <td><input name="totalCalc" type="number" placeholder="Rs. 0" value="0"></td>
+        </tr>
+      </table>
+        
+      </div>
+    </div>
+    <script src="/frontwork-income.js"></script>
+</body>
+</html>

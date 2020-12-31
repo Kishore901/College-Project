@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url(./thank-you.jpg) no-repeat center;
+  margin-top: 35rem;
+  background-color: #481467;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="home.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/images/img-home/logo.png" type="image">
+  </head>
+
+  <body>
+    <header>
+      <% if(loggedin === true){ %>
+        <%- include('./partials/home-after.ejs') %>
+     <% } else{ %>
+        <%- include('./partials/home-before.ejs') %> 
+     <% } %>
+      <div class="intro">
+        <h1 class="big-title translate" data-speed="0.1"> Make Money Work In Your Favor</h1>
+        <p class="header-content translate" data-speed="0.1">
+          Don't worry about your finance and get total control of your money with our budgeting tool. You won't be spending less, You will be spending smart.
+        </p>
+        <button class="try-now-btn translate" data-speed="0.1"><a href="/sign">Try Now !</a></button>
+      </div>
+      <div class="wrapper">
+        <img src="/images/img-home/FrontBlueMount.png" class="front-blue-mountain translate" data-speed="0" alt="blue mountain"/>
+        <img src="/images/img-home/Main1.png" class="main translate" data-speed="0.2" alt="Girl standing on mountain" />
+        <img src="/images/img-home/Trees.png" class="trees translate" data-speed="0.1" alt="Trees" />
+        <img src="/images/img-home/BackMount.png" class="back-mountain translate" data-speed="0.3" alt="Mountain" />
+        <img src="/images/img-home/Moon3.png" class="moon translate" data-speed="-0.2" alt="Moon and Sky" />
+      </div>
+    </header>
+    <div class=bg-color>
+    <section class="features">
+      <div class="mockup-img">
+        <img src="/images/img-home/actual mockup2.png" alt="" />
+      </div>
+      <div class="mockup-content">
+        <h2>Why Use Our Budgeting Tool?</h2>
+        <p>
+          Budgeting actually gives you a sense of freedom and control. <br>Get started on the right foot! 
+          Learn about Rules which will help you to set up your budget, take charge of your money and reach your financial goals. 
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="vision">
+        <hr>
+          <h1 class="vision-h">Our Vision</h1>
+          <p class="vision-p">To create a better everyday life for you so that you can live it to fullest without worrying about your financial condition.
+            Everyone should have the opportunity to build wealth. We believe in the simple not the complex. Come join us and live your dreams by taking small steps at a time.</p>
+        <hr>
+        </div>
+        <div class="main-section">
+          <h2 class="main-heading">Three Simple Rules For Successful Budgeting</h2>
+          <div class="section">
+            <div class="sec one">
+            <h2>Rule 1: Give Every Penny a Job</h2>
+              <p>Be the Boss and Confidently spend your money. When you earn money, prioritize how you’ll use it, and then simply follow your plan. You’ve already mapped out a plan, so instead of stressing over every little spending decision, you’re just working your plan.</p>
+              <h3>How it works?</h3>
+              <ul>
+                <li>Earn</li>
+                <li>Plan</li>
+                <li>Spend Money Stress-Free</li>
+              </ul>
+            </div>
+            <div>
+                <img src="/images/img-home/giveMoneyJob.png" class="sec-img"> 
+              </div>
+          </div>
+          <div class="section-two">
+            <div class="sec-two">
+            <h2>Rule 2: Embrace Your True Expenses</h2>
+            <p>When you follow Rule One and start giving every penny a job, your money starts to obey. It lines itself up with your priorities.<br> Now figure out infrequent large expenses, break them into manageable monthly expenses, and save money for it. So when the actual due date comes, you don't have to scratch your head or bite your fingernails. </p>
+            <h3>How it works?</h3>
+              <ul>
+                <li>Find a big, infrequent expense.</li>
+                <li>Create a goal to fund it monthly.</li>
+                <li>When that expense arrives, just pay it!</li>
+              </ul>
+            </div>
+            <div>  
+              <img src="/images/img-home/TrueExpense.png"  class="sec-img sec-img-two">
+            </div>
+        </div>
+        <div class="section">
+          <div class="sec three">
+          <h2>Rule 3: Be Flexible And Address Overspending</h2>
+          <p>When you overspend in a budget category, just adjust. No guilt necessary. Circumstances change and plans change with them. Your budget is no different. If you overspend in one category, free up money from another category and move along. Remember, you’re the Boss!</p>
+          <h3>How it works?</h3>
+              <ul>
+                <li>Choose a category with overspending.</li>
+                <li>Move funds from another category to cover it.</li>
+                <li>Move on with your life—no guilt!</li>
+              </ul>
+            </div>
+            <div>
+          <img src="/images/img-home/Balanced.png"  class="sec-img"/>
+        </div>
+      </div>
+    </section>
+    <section>
+        <hr>
+        <h3 class="main-heading rule-heading">40-30-20-10 Rule Of Budgeting</h3>
+        <div class="rules">
+        <p>The 40 30 20 10 rule is an easy budgeting method that can help you to manage your money effectively. The basic rule of thumb is to divide your monthly after-tax income into four spending categories:</p>
+        <ul>
+          <li><b><u>40% For Needs:</u></b> Needs are the things necessary for survival. These include rent, bills, groceries and utilities. These are your "must-haves."</li>
+          <br>
+          <li><b><u>30% For Wants:</u></b> Wants are all the things you spend money on that are not absolutely essential. This includes dinning out, shopping, sporting events etc. You can cook instead of eating out, or watch sports on TV instead of getting tickets to the game.</li>
+          <br>
+          <li><b><u>20% For Goals:</u></b> To accomplish your goals, you need to know how to set them. Consider what you want to achieve, it could be downpayment for a new home or long vacation and break the total amount needed into monthly goals. Save the amount each month towards your goal.</li>
+          <br>
+          <li><b><u>10% For Investment:</u></b> This includes investing in the stock, gold, bonds etc. You should have at least 3 months of emergency savings in hand in case an unforeseen event occurs. After that, focus on retirement and meeting other financial goals down the road.</li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <h4>Made By Bhavya M & Kishore K</h4>
+        <h4>&#169 2020. All Rights Reserved.</h4>
+      </div>
+    </footer>
+    <script src="homepage.js"></script>
+  </body>
+</html>

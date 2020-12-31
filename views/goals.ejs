@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goals</title>
+    <script src="https://kit.fontawesome.com/61b347cc02.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/images/logo-favi.png" type="image/x-icon">
+    <link rel="stylesheet" href="/styles.css"/>
+  </head>
+  <body class="goal-body">
+    <%- include('./partials/header-nav.ejs') %>
+    <div class="wrapper">
+      <div class="sidebar">
+        <ul>
+          <li class="active">
+            <i class="fas fa-university"></i><a href="/income">Income</a>
+          </li>
+          <li>
+            <i class="fas fa-clipboard-list"></i><a href="/budget">Budget</a>
+          </li>
+          <li><i class="fas fa-flag"></i><a href="/goals"> Goals</a></li>
+        </ul>
+      </div>
+      <div class="main-progress">
+        <h1 class="main-line">Start Achieving Your Goals Today</h1>
+        <p class="main-content">
+          Goal setting is a powerful process for thinking about your ideal
+          future, and for motivating yourself to turn your vision of this future
+          into reality. The process of setting goals helps you choose where you
+          want to go in life. By knowing precisely what you want to achieve, you
+          know where you have to concentrate your efforts.
+        </p>
+        <p class="main-content">
+          <b>"Let's break down complex challenges in a meaningful way."</b>
+        </p>
+        <div class="goal-container">
+          <div class="box">
+            <p>Goal 1</p>
+            <div class="progress">
+              <div class="progress-bar">
+                <span class="G1">0%</span>
+              </div>
+            </div>
+            <p>Goal 2</p>
+            <div class="progress">
+              <div class="progress-bar">
+                <span class="G2">0%</span>
+              </div>
+            </div>
+  
+            <p>Goal 3</p>
+            <div class="progress">
+              <div class="progress-bar">
+                <span class="G3">0%</span>
+              </div>
+            </div>
+  
+            <!-- <p>Goal 4</p>
+            <div class="progress">
+              <div class="progress-bar">
+                <span>20%</span>
+              </div>
+            </div> -->
+          </div>
+          <div class="total-goal-div">
+            <% if (messages.length>0 ) {%>
+              <h4> <div><%= messages %></div> </h4>
+               <% }%>
+            <form action="/addgoals" method="POST">
+              <h2>Total Amounts for goals</h2>
+              <div>
+                <h4>Home-G1</h3>
+                  <input type="number" placeholder="Rs. 0" name="homeinput">
+              </div>
+              <div>
+                <h4>Vacation-G2</h3>
+                  <input type="number" placeholder="Rs. 0" name="vacinput">
+              </div>
+              <div>
+                <h4>Gadget-G3</h3>
+                  <input type="number" placeholder="Rs. 0" name="gadinput">
+              </div> 
+              <input class="goal-btn" type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+    <script src="/goalsjs.js"></script>
+  </body>
+</html>

@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+.wrapper {
+  display: flex;
+  position: relative;
+}
+.wrapper .sidebar {
+  width: 170px;
+  background: #4b4276;
+  height: 100%;
+  padding: 30px 0px;
+  position: fixed;
+}
+.wrapper .sidebar ul {
+  list-style: none;
+}
+.wrapper .sidebar ul li {
+  font-size: 20px;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #bdb8d7;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.wrapper .sidebar ul li a {
+  color: #bdb8d7;
+  /* display: block; */
+  cursor: pointer;
+  text-decoration: none;
+}
+/* .wrapper .sidebar ul li:hover {
+  background-color: #594f8d;
+} */
+.wrapper .sidebar ul li:hover a {
+  color: #fff;
+}
+.wrapper .sidebar ul li:hover .fas {
+  color: #fff;
+}
+.wrapper .sidebar ul li:hover .far {
+  color: #fff;
+}
+
+.wrapper .main,
+.main-income,
+.main-progress,
+.main-report {
+  width: 100%;
+  margin-left: 178px;
+}
+.wrapper .sidebar ul .fas,
+.wrapper .sidebar ul .far {
+  margin-right: 15px;
+  font-size: 1.5rem;
+  color: #bdb8d7;
+}
+.navbar a {
+  position: fixed;
+}
+td {
+  padding: 0 70px 20px 20px;
+}
+.table-bud thead td {
+  font-weight: 600;
+}
+.main table input {
+  border: none;
+  outline-color: rgb(42, 157, 233);
+  text-align: right;
+}
+
+.main-income table input {
+  border: none;
+  outline-color: rgb(42, 157, 233);
+  text-align: right;
+}
+.btn {
+  border: none;
+  background-color: #4b4276;
+  color: white;
+  border-radius: 25%;
+  padding: 15px;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #8e7fdd;
+}
+
+.main h2 {
+  margin-bottom: 20px;
+  font-weight: 100;
+  color: #4b4276;
+}
+
+h2 {
+  font-weight: 100;
+  color: #4b4276;
+}
+
+.main-income h2 {
+  margin-bottom: 20px;
+}
+.month-year {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+.month-year input {
+  margin: 10px;
+}
+#month_yr {
+  outline: none;
+  border-radius: 10px;
+  transition: 200ms;
+  border: 1px solid #4b4276;
+}
+#month_yr:focus {
+  padding: 3px;
+  border: 2px solid #4b4276;
+}
+.month-btn,
+.goal-btn,
+.totalcalbtn,
+.incomeTotalCalc {
+  border: none;
+  background-color: #4b4276;
+  color: white;
+  border-radius: 10px;
+  width: 70px;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+.totalcalbtn,
+.incomeTotalCalc {
+  padding: 4px;
+  margin-top: 6px;
+}
+.goal-btn {
+  width: 80px;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+.month-btn:hover,
+.goal-btn:hover,
+.totalcalbtn:hover,
+.incomeTotalCalc:hover {
+  background-color: #8e7fdd;
+}
+
+/* Navbar styles */
+
+li,
+a,
+button {
+  font-size: 1rem;
+  font-family: "Montserrat";
+  font-weight: 500;
+  /* color: white; */
+  text-decoration: none;
+}
+/* .nav-div {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+} */
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 25px 8%;
+  align-items: center;
+  /* position: fixed; */
+}
+
+.logo {
+  margin-right: auto;
+  margin-left: -65px;
+  cursor: pointer;
+  height: 4rem;
+  width: 3rem;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  padding: 0 1.1rem;
+  display: inline-block;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+/* .nav-links li a:hover {
+  color: #0088a9;
+} */
+
+/* button {
+  margin-left: 1.25rem;
+  padding: 0.5625rem 1.563rem;
+  border: none;
+  background-color: rgba(0, 139, 169, 1);
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgba(0, 139, 169, 0.8);
+  margin-bottom: 0.5rem;
+} */
+
+/* Goals page  */
+
+/* * {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+} */
+.goal-body {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+.main-line {
+  text-decoration: underline;
+}
+.main-line,
+.main-content {
+  text-align: center;
+  color: #4b4276;
+  /* margin-top: 3rem; */
+  padding: 0 4rem;
+}
+.main-content {
+  margin: 1rem 0;
+}
+.box {
+  width: 40%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  background-color: #6155a6;
+  box-shadow: 0 0 20px rgba(16, 28, 88, 0.9);
+  color: #fff;
+  border-radius: 9px;
+  margin: auto;
+}
+
+.progress {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  margin: 18px 0px;
+  height: 25px;
+}
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background-color: #a685e2;
+  border-radius: 10px;
+  position: relative;
+  transition: all 1.5s;
+}
+.progress-bar span {
+  position: absolute;
+  top: 16%;
+  right: 5%;
+}
+/* For report page */
+
+.report-form {
+  color: #4b4276;
+}
+#report-month {
+  outline: none;
+  border-radius: 10px;
+  transition: 200ms;
+  border: 1px solid #4b4276;
+  padding: 3px;
+}
+.logout-a,
+.home-btn,
+.cta-btn {
+  border: #fa913b solid 1px;
+  color: #fa913b;
+  border-radius: 10px;
+  width: 100%;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  background-color: white;
+}
+
+.total-btn {
+  border: #fa913b solid 2px;
+  color: #fa913b;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 800;
+  outline: none;
+  cursor: pointer;
+  padding: 8px;
+  background-color: white;
+  margin: 0 0 10px 20px;
+}
+.cta-btn:hover,
+.logout-a:hover,
+.home-btn:hover,
+.total-btn:hover {
+  background-color: #fa913b;
+  color: white;
+}
+
+.brand-name {
+  margin-right: 42rem;
+  color: #f18b54;
+  font-size: 1.4rem;
+}
+.animation {
+  display: flex;
+  justify-content: center;
+}
+/* Total div styling */
+.total-table {
+  width: 100%;
+  color: white;
+}
+.total-table td {
+  padding: 8px;
+}
+
+.total-head {
+  background-color: #55608e;
+  font-weight: 900;
+  /* #fbaa63 */
+}
+.total-table tr {
+  background-color: #7494a9;
+}
+.total-table tr:hover {
+  background-color: #92a4ba;
+}
+.goal-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.total-goal-div {
+  margin-right: 50px;
+  margin-top: 40px;
+  color: #4b4276;
+}
+.total-goal-div div {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.total-goal-div input {
+  outline: none;
+}
