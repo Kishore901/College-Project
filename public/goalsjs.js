@@ -8,7 +8,7 @@ window.addEventListener("load", () => {
   console.log(bar1);
   console.log(bar2);
   console.log(bar3);
-  let url = `http://localhost:3000`;
+  let url = "";
   fetch(`${url}/goalbars`, {
     method: "POST",
     headers: {

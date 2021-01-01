@@ -3,7 +3,7 @@ const monthSubmitForm = document.querySelector(".month-year-income");
 const tableInc = document.querySelector(".table-income");
 const buttons = document.querySelectorAll(".btn");
 const IncomeTotalBtn = document.querySelector(".incomeTotalCalc");
-let url = `http://localhost:3000`;
+let url = "";
 // const data = {
 //   budget: "My budget",
 //   expense: "My expense",

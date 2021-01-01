@@ -7,7 +7,7 @@ const totalDiv = document.querySelector(".total-div");
 const totalcalbtn = document.querySelector(".totalcalbtn");
 const totalbudcal = document.querySelector(".totalbudcal");
 const totalexpcal = document.querySelector(".totalexpcal");
-let url = `http://localhost:3000`;
+let url = "";
 table.addEventListener("click", (e) => {
   if (e.target.tagName === "BUTTON") {
     // let btn = document.querySelectorAll(`.${e.target.className}`)
