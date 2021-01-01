@@ -78,7 +78,7 @@ Expense.belongsTo(User, { foreignKey: "userid" });
 Budget.belongsTo(Expense, { foreignKey: "expenseId" });
 Goals.belongsTo(User, { foreignKey: "userid" });
 Totalusers.belongsTo(User, { constraints: false });
-
+// comment
 connection.sync({
   // logging: console.log,
   force: false,
