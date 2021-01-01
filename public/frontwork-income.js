@@ -29,7 +29,10 @@ monthSubmitForm.addEventListener("submit", (e) => {
   console.log(e.target.month.value);
   let time = e.target.month.value;
   let now = new Date();
-  let m = now.getMonth() + 1;
+  let m = parseInt(now.getMonth() + 1);
+  if (m < 10) {
+    m = `0${m}`;
+  }
   var y = now.getFullYear();
   let timeNow = `${y}-${m}`;
   if (time !== timeNow) {
@@ -87,8 +90,11 @@ tableInc.addEventListener("click", (e) => {
     let val = row.previousElementSibling.children[0].value;
     let name = row.previousElementSibling.children[0].name;
     let now = new Date();
-    let m = now.getMonth() + 1;
+    let m = parseInt(now.getMonth() + 1);
     var y = now.getFullYear();
+    if (m < 10) {
+      m = `0${m}`;
+    }
     console.log(y);
     console.log(m);
     let time = `${y}-${m}`;

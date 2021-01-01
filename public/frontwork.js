@@ -32,8 +32,11 @@ table.addEventListener("click", (e) => {
       avail.style.color = "green";
     }
     let now = new Date();
-    let m = now.getMonth() + 1;
+    let m = parseInt(now.getMonth() + 1);
     var y = now.getFullYear();
+    if (m < 10) {
+      m = `0${m}`;
+    }
     console.log(y);
     console.log(m);
     let time = `${y}-${m}`;
@@ -93,8 +96,11 @@ monthSubmitForm.addEventListener("submit", (e) => {
   let time = e.target.month.value;
   calTime = time;
   let now = new Date();
-  let m = now.getMonth() + 1;
+  let m = parseInt(now.getMonth() + 1);
   var y = now.getFullYear();
+  if (m < 10) {
+    m = `0${m}`;
+  }
   let timeNow = `${y}-${m}`;
   if (time !== timeNow) {
     // hides update buttons for previous data
@@ -211,8 +217,11 @@ total.addEventListener("click", () => {
   let data;
   if (!calTime) {
     let now = new Date();
-    let m = now.getMonth() + 1;
+    let m = parseInt(now.getMonth() + 1);
     var y = now.getFullYear();
+    if (m < 10) {
+      m = `0${m}`;
+    }
     let time = `${y}-${m}`;
     data = { time };
   } else {

@@ -80,8 +80,8 @@ Goals.belongsTo(User, { foreignKey: "userid" });
 Totalusers.belongsTo(User, { constraints: false });
 
 connection.sync({
-  logging: console.log,
-  force: true,
+  // logging: console.log,
+  force: false,
 });
 
 // async function asyncall() {
@@ -894,8 +894,13 @@ app.post("/addgoals", (req, res) => {
   let Vtotal = req.body.vacinput;
   let Gtotal = req.body.gadinput;
   let now = new Date();
-  let m = now.getMonth() + 1;
+
+  let m = parseInt(now.getMonth() + 1);
+
   var y = now.getFullYear();
+  if (m < 10) {
+    m = `0${m}`;
+  }
   let time = `${y}-${m}`;
   Goals.findOne({ where: { userid: req.session.userid } }).then((user) => {
     if (!user) {
