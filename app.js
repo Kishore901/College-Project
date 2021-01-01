@@ -41,7 +41,7 @@ app.use(
     secret: SESS_SEC,
     name: SESS_NAME,
     cookie: {
-      maxAge: SESSION_LIFE,
+      maxAge: 7200000,
       sameSite: true,
       secure: IN_PROD,
     },
